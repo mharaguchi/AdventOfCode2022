@@ -1,9 +1,4 @@
 ﻿using AdventOfCode2022.Utils;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventOfCode2022.Days
 {
@@ -26,10 +21,24 @@ namespace AdventOfCode2022.Days
 
         public static List<int> elves = new List<int>();
 
-        public static string Run(string input)
+        public static string Run(string input, int part, bool useSampleData)
         {
-            //return RunPart1(input);
-            return RunPart2(input);
+            if (part == 1)
+            {
+                if (useSampleData)
+                {
+                    return RunPart1(_sampleInput);
+                }
+                return RunPart1(input);
+            }
+            else
+            {
+                if (useSampleData)
+                {
+                    return RunPart2(_sampleInput);
+                }
+                return RunPart2(input);
+            }
         }
 
         internal static string RunPart1(string input)
