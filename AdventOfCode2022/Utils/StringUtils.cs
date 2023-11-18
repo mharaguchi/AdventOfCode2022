@@ -26,7 +26,7 @@ namespace AdventOfCode2022.Utils
                 if (splitsTracker == splits.Length)
                 {
                     tokens.Add(remainingString);
-                    PrintTokens(tokens);
+                    //PrintTokens(tokens);
                     return tokens;
                 }
                 if (remainingString.StartsWith(splits[splitsTracker]))
@@ -45,7 +45,7 @@ namespace AdventOfCode2022.Utils
                     inputTracker++;
                 }
             }
-            PrintTokens(tokens);
+            //PrintTokens(tokens);
             return tokens;
         }
 
