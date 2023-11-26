@@ -22,6 +22,8 @@ namespace AdventOfCode2022
                 5 => Day5.Run(input, part, useSampleData),
                 6 => Day6.Run(input, part, useSampleData),
                 7 => Day7.Run(input, part, useSampleData),
+                8 => Day8.Run(input, part, useSampleData),
+                9 => Day9.Run(input, part, useSampleData),
                 _ => "Error selecting day",
             }; ;
         }
